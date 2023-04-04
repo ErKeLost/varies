@@ -44,7 +44,7 @@
     "lint-staged": "^13.1.2",
     "pnpm": "^7.27.1",
     "prettier": "latest",
-    "rimraf": "^3.0.2",
+    "rimraf": "^4.0.0",
     "rollup": "^3.17.2",
     "tsup": "^6.6.3",
     "turbo": "latest",

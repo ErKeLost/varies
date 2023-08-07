@@ -117,6 +117,9 @@ importers:
   packages/animated:
     specifiers: {}
 
+  packages/config:
+    specifiers: {}
+
   packages/core:
     specifiers:
       '@variesd/animated': workspace:*

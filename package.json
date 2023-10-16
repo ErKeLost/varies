@@ -18,7 +18,10 @@
     "preinstall": "npx only-allow pnpm",
     "prepublishOnly": "npm run build",
     "release": "bumpp packages/*/package.json && pnpm publish -r",
-    "test": "vitest"
+    "test": "vitest",
+    "docs:dev": "vitepress dev varies-doc",
+    "docs:build": "vitepress build varies-doc",
+    "docs:preview": "vitepress preview varies-doc"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",

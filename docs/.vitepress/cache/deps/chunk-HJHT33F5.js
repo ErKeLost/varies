@@ -18,7 +18,7 @@ import {
   toRefs,
   unref,
   watch
-} from "./chunk-N5TED7FU.js";
+} from "./chunk-NQEDJL6T.js";
 import {
   ACESFilmicToneMapping,
   BufferAttribute,
@@ -42,9 +42,9 @@ import {
   WebGLRenderer,
   sRGBEncoding,
   three_module_exports
-} from "./chunk-XSUIV4LX.js";
+} from "./chunk-2KOAPTJO.js";
 
-// ../node_modules/.pnpm/@vueuse+shared@9.13.0_vue@3.2.47/node_modules/@vueuse/shared/index.mjs
+// ../node_modules/.pnpm/@vueuse+shared@9.13.0_vue@3.3.4/node_modules/@vueuse/shared/index.mjs
 var _a;
 var isClient = typeof window !== "undefined";
 var isString = (val) => typeof val === "string";
@@ -97,7 +97,7 @@ function tryOnMounted(fn, sync = true) {
     nextTick(fn);
 }
 
-// ../node_modules/.pnpm/@vueuse+core@9.13.0_vue@3.2.47/node_modules/@vueuse/core/index.mjs
+// ../node_modules/.pnpm/@vueuse+core@9.13.0_vue@3.3.4/node_modules/@vueuse/core/index.mjs
 function unrefElement(elRef) {
   var _a2;
   const plain = resolveUnref(elRef);
@@ -390,7 +390,7 @@ function useWindowSize(options = {}) {
   return { width, height };
 }
 
-// ../node_modules/.pnpm/@tresjs+core@1.7.0_three@0.149.0+vue@3.2.47/node_modules/@tresjs/core/dist/tres.js
+// ../node_modules/.pnpm/@tresjs+core@1.7.0_three@0.149.0_vue@3.3.4/node_modules/@tresjs/core/dist/tres.js
 var Ye = ((e) => (e.Perspective = "Perspective", e.Orthographic = "Orthographic", e))(Ye || {});
 var B = {
   cameras: []
@@ -884,4 +884,4 @@ export {
   ht,
   vt
 };
-//# sourceMappingURL=chunk-7SHJKIQY.js.map
+//# sourceMappingURL=chunk-HJHT33F5.js.map

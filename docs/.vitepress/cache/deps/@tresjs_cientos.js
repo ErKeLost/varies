@@ -2,7 +2,7 @@ import {
   T,
   gt,
   re
-} from "./chunk-7SHJKIQY.js";
+} from "./chunk-HJHT33F5.js";
 import {
   computed,
   createBlock,
@@ -24,7 +24,7 @@ import {
   watch,
   withAsyncContext,
   withCtx
-} from "./chunk-N5TED7FU.js";
+} from "./chunk-NQEDJL6T.js";
 import {
   AmbientLight,
   AnimationClip,
@@ -120,10 +120,10 @@ import {
   Vector4,
   VectorKeyframeTrack,
   sRGBEncoding
-} from "./chunk-XSUIV4LX.js";
-import "./chunk-JC4IRQUL.js";
+} from "./chunk-2KOAPTJO.js";
+import "./chunk-SSYGV25P.js";
 
-// ../node_modules/.pnpm/@tresjs+cientos@1.7.0_xfijwtvpffppczrbyqr2tcvuk4/node_modules/@tresjs/cientos/dist/trescientos.js
+// ../node_modules/.pnpm/@tresjs+cientos@1.7.0_@tresjs+core@1.7.0_three@0.149.0_vue@3.3.4/node_modules/@tresjs/cientos/dist/trescientos.js
 function Ep(b, i) {
   for (var r = 0; r < i.length; r++) {
     const s = i[r];
@@ -12247,7 +12247,7 @@ var Qu = {
         });
       }
       play() {
-        this.stop(), this.updateMarker_(0), this.markerElem_.classList.add(Le("m", "a")), this.startTime_ = new Date().getTime() + ys, this.stopped_ = false, requestAnimationFrame(this.onTimer_);
+        this.stop(), this.updateMarker_(0), this.markerElem_.classList.add(Le("m", "a")), this.startTime_ = (/* @__PURE__ */ new Date()).getTime() + ys, this.stopped_ = false, requestAnimationFrame(this.onTimer_);
       }
       stop() {
         this.stopped_ = true, this.markerElem_.classList.remove(Le("m", "a"));
@@ -12270,7 +12270,7 @@ var Qu = {
       onTimer_() {
         if (this.startTime_ === null)
           return;
-        const o = new Date().getTime() - this.startTime_, p = o / $t;
+        const o = (/* @__PURE__ */ new Date()).getTime() - this.startTime_, p = o / $t;
         this.updateMarker_(p), o > $t + ys && this.stop(), this.stopped_ || requestAnimationFrame(this.onTimer_);
       }
       onValueChange_() {
@@ -12561,10 +12561,10 @@ var Qu = {
         });
       }
       begin() {
-        this.stopwatch_.begin(new Date());
+        this.stopwatch_.begin(/* @__PURE__ */ new Date());
       }
       end() {
-        this.stopwatch_.end(new Date());
+        this.stopwatch_.end(/* @__PURE__ */ new Date());
       }
       onTick_() {
         const o = this.stopwatch_.fps;

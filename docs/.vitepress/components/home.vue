@@ -5,7 +5,7 @@
 
 <template>
   <section id="hero">
-    <TheExperience />
+    <!-- <TheExperience /> -->
     <h1 class="tagline">
       Use
       <span class="accent"> Animation Library</span>

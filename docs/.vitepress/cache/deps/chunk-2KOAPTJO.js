@@ -1,6 +1,6 @@
 import {
   __export
-} from "./chunk-JC4IRQUL.js";
+} from "./chunk-SSYGV25P.js";
 
 // ../node_modules/.pnpm/three@0.149.0/node_modules/three/build/three.module.js
 var three_module_exports = {};
@@ -812,9 +812,9 @@ var MathUtils = Object.freeze({
   smootherstep,
   smoothstep
 });
-var Vector2 = class {
+var Vector2 = class _Vector2 {
   constructor(x = 0, y = 0) {
-    Vector2.prototype.isVector2 = true;
+    _Vector2.prototype.isVector2 = true;
     this.x = x;
     this.y = y;
   }
@@ -1069,9 +1069,9 @@ var Vector2 = class {
     yield this.y;
   }
 };
-var Matrix3 = class {
+var Matrix3 = class _Matrix3 {
   constructor() {
-    Matrix3.prototype.isMatrix3 = true;
+    _Matrix3.prototype.isMatrix3 = true;
     this.elements = [
       1,
       0,
@@ -2016,8 +2016,8 @@ function serializeImage(image) {
   }
 }
 var textureId = 0;
-var Texture = class extends EventDispatcher {
-  constructor(image = Texture.DEFAULT_IMAGE, mapping = Texture.DEFAULT_MAPPING, wrapS = ClampToEdgeWrapping, wrapT = ClampToEdgeWrapping, magFilter = LinearFilter, minFilter = LinearMipmapLinearFilter, format = RGBAFormat, type = UnsignedByteType, anisotropy = Texture.DEFAULT_ANISOTROPY, encoding = LinearEncoding) {
+var Texture = class _Texture extends EventDispatcher {
+  constructor(image = _Texture.DEFAULT_IMAGE, mapping = _Texture.DEFAULT_MAPPING, wrapS = ClampToEdgeWrapping, wrapT = ClampToEdgeWrapping, magFilter = LinearFilter, minFilter = LinearMipmapLinearFilter, format = RGBAFormat, type = UnsignedByteType, anisotropy = _Texture.DEFAULT_ANISOTROPY, encoding = LinearEncoding) {
     super();
     this.isTexture = true;
     Object.defineProperty(this, "id", { value: textureId++ });
@@ -2185,9 +2185,9 @@ var Texture = class extends EventDispatcher {
 Texture.DEFAULT_IMAGE = null;
 Texture.DEFAULT_MAPPING = UVMapping;
 Texture.DEFAULT_ANISOTROPY = 1;
-var Vector4 = class {
+var Vector4 = class _Vector4 {
   constructor(x = 0, y = 0, z = 0, w = 1) {
-    Vector4.prototype.isVector4 = true;
+    _Vector4.prototype.isVector4 = true;
     this.x = x;
     this.y = y;
     this.z = z;
@@ -3103,9 +3103,9 @@ var Quaternion = class {
     yield this._w;
   }
 };
-var Vector3 = class {
+var Vector3 = class _Vector3 {
   constructor(x = 0, y = 0, z = 0) {
-    Vector3.prototype.isVector3 = true;
+    _Vector3.prototype.isVector3 = true;
     this.x = x;
     this.y = y;
     this.z = z;
@@ -4214,9 +4214,9 @@ var Ray = class {
     return new this.constructor().copy(this);
   }
 };
-var Matrix4 = class {
+var Matrix4 = class _Matrix4 {
   constructor() {
-    Matrix4.prototype.isMatrix4 = true;
+    _Matrix4.prototype.isMatrix4 = true;
     this.elements = [
       1,
       0,
@@ -4278,7 +4278,7 @@ var Matrix4 = class {
     return this;
   }
   clone() {
-    return new Matrix4().fromArray(this.elements);
+    return new _Matrix4().fromArray(this.elements);
   }
   copy(m) {
     const te = this.elements;
@@ -4952,8 +4952,8 @@ var _y = new Vector3();
 var _z = new Vector3();
 var _matrix$1 = new Matrix4();
 var _quaternion$3 = new Quaternion();
-var Euler = class {
-  constructor(x = 0, y = 0, z = 0, order = Euler.DEFAULT_ORDER) {
+var Euler = class _Euler {
+  constructor(x = 0, y = 0, z = 0, order = _Euler.DEFAULT_ORDER) {
     this.isEuler = true;
     this._x = x;
     this._y = y;
@@ -5167,7 +5167,7 @@ var _yAxis = new Vector3(0, 1, 0);
 var _zAxis = new Vector3(0, 0, 1);
 var _addedEvent = { type: "added" };
 var _removedEvent = { type: "removed" };
-var Object3D = class extends EventDispatcher {
+var Object3D = class _Object3D extends EventDispatcher {
   constructor() {
     super();
     this.isObject3D = true;
@@ -5177,7 +5177,7 @@ var Object3D = class extends EventDispatcher {
     this.type = "Object3D";
     this.parent = null;
     this.children = [];
-    this.up = Object3D.DEFAULT_UP.clone();
+    this.up = _Object3D.DEFAULT_UP.clone();
     const position = new Vector3();
     const rotation = new Euler();
     const quaternion = new Quaternion();
@@ -5220,9 +5220,9 @@ var Object3D = class extends EventDispatcher {
     });
     this.matrix = new Matrix4();
     this.matrixWorld = new Matrix4();
-    this.matrixAutoUpdate = Object3D.DEFAULT_MATRIX_AUTO_UPDATE;
+    this.matrixAutoUpdate = _Object3D.DEFAULT_MATRIX_AUTO_UPDATE;
     this.matrixWorldNeedsUpdate = false;
-    this.matrixWorldAutoUpdate = Object3D.DEFAULT_MATRIX_WORLD_AUTO_UPDATE;
+    this.matrixWorldAutoUpdate = _Object3D.DEFAULT_MATRIX_WORLD_AUTO_UPDATE;
     this.layers = new Layers();
     this.visible = true;
     this.castShadow = false;
@@ -5700,7 +5700,7 @@ var _vbc = new Vector3();
 var _vap = new Vector3();
 var _vbp = new Vector3();
 var _vcp = new Vector3();
-var Triangle = class {
+var Triangle = class _Triangle {
   constructor(a = new Vector3(), b = new Vector3(), c = new Vector3()) {
     this.a = a;
     this.b = b;
@@ -5789,22 +5789,22 @@ var Triangle = class {
     return target.addVectors(this.a, this.b).add(this.c).multiplyScalar(1 / 3);
   }
   getNormal(target) {
-    return Triangle.getNormal(this.a, this.b, this.c, target);
+    return _Triangle.getNormal(this.a, this.b, this.c, target);
   }
   getPlane(target) {
     return target.setFromCoplanarPoints(this.a, this.b, this.c);
   }
   getBarycoord(point, target) {
-    return Triangle.getBarycoord(point, this.a, this.b, this.c, target);
+    return _Triangle.getBarycoord(point, this.a, this.b, this.c, target);
   }
   getUV(point, uv1, uv2, uv3, target) {
-    return Triangle.getUV(point, this.a, this.b, this.c, uv1, uv2, uv3, target);
+    return _Triangle.getUV(point, this.a, this.b, this.c, uv1, uv2, uv3, target);
   }
   containsPoint(point) {
-    return Triangle.containsPoint(point, this.a, this.b, this.c);
+    return _Triangle.containsPoint(point, this.a, this.b, this.c);
   }
   isFrontFacing(direction) {
-    return Triangle.isFrontFacing(this.a, this.b, this.c, direction);
+    return _Triangle.isFrontFacing(this.a, this.b, this.c, direction);
   }
   intersectsBox(box) {
     return box.intersectsTriangle(this);
@@ -6553,7 +6553,7 @@ var _offset = new Vector3();
 var _box$1 = new Box3();
 var _boxMorphTargets = new Box3();
 var _vector$8 = new Vector3();
-var BufferGeometry = class extends EventDispatcher {
+var BufferGeometry = class _BufferGeometry extends EventDispatcher {
   constructor() {
     super();
     this.isBufferGeometry = true;
@@ -6960,7 +6960,7 @@ var BufferGeometry = class extends EventDispatcher {
       console.warn("THREE.BufferGeometry.toNonIndexed(): BufferGeometry is already non-indexed.");
       return this;
     }
-    const geometry2 = new BufferGeometry();
+    const geometry2 = new _BufferGeometry();
     const indices = this.index.array;
     const attributes = this.attributes;
     for (const name in attributes) {
@@ -7331,7 +7331,7 @@ function checkBufferGeometryIntersection(object, material, raycaster, ray, uv, u
   }
   return intersection;
 }
-var BoxGeometry = class extends BufferGeometry {
+var BoxGeometry = class _BoxGeometry extends BufferGeometry {
   constructor(width = 1, height = 1, depth = 1, widthSegments = 1, heightSegments = 1, depthSegments = 1) {
     super();
     this.type = "BoxGeometry";
@@ -7408,7 +7408,7 @@ var BoxGeometry = class extends BufferGeometry {
     }
   }
   static fromJSON(data) {
-    return new BoxGeometry(data.width, data.height, data.depth, data.widthSegments, data.heightSegments, data.depthSegments);
+    return new _BoxGeometry(data.width, data.height, data.depth, data.widthSegments, data.heightSegments, data.depthSegments);
   }
 };
 function cloneUniforms(src) {
@@ -8274,7 +8274,7 @@ function WebGLAttributes(gl, capabilities) {
     update
   };
 }
-var PlaneGeometry = class extends BufferGeometry {
+var PlaneGeometry = class _PlaneGeometry extends BufferGeometry {
   constructor(width = 1, height = 1, widthSegments = 1, heightSegments = 1) {
     super();
     this.type = "PlaneGeometry";
@@ -8322,7 +8322,7 @@ var PlaneGeometry = class extends BufferGeometry {
     this.setAttribute("uv", new Float32BufferAttribute(uvs, 2));
   }
   static fromJSON(data) {
-    return new PlaneGeometry(data.width, data.height, data.widthSegments, data.heightSegments);
+    return new _PlaneGeometry(data.width, data.height, data.widthSegments, data.heightSegments);
   }
 };
 var alphamap_fragment = "#ifdef USE_ALPHAMAP\n	diffuseColor.a *= texture2D( alphaMap, vUv ).g;\n#endif";
@@ -17806,7 +17806,7 @@ function WebGLRenderer(parameters = {}) {
 var WebGL1Renderer = class extends WebGLRenderer {
 };
 WebGL1Renderer.prototype.isWebGL1Renderer = true;
-var FogExp2 = class {
+var FogExp2 = class _FogExp2 {
   constructor(color, density = 25e-5) {
     this.isFogExp2 = true;
     this.name = "";
@@ -17814,7 +17814,7 @@ var FogExp2 = class {
     this.density = density;
   }
   clone() {
-    return new FogExp2(this.color, this.density);
+    return new _FogExp2(this.color, this.density);
   }
   toJSON() {
     return {
@@ -17824,7 +17824,7 @@ var FogExp2 = class {
     };
   }
 };
-var Fog = class {
+var Fog = class _Fog {
   constructor(color, near = 1, far = 1e3) {
     this.isFog = true;
     this.name = "";
@@ -17833,7 +17833,7 @@ var Fog = class {
     this.far = far;
   }
   clone() {
-    return new Fog(this.color, this.near, this.far);
+    return new _Fog(this.color, this.near, this.far);
   }
   toJSON() {
     return {
@@ -17972,7 +17972,7 @@ var InterleavedBuffer = class {
   }
 };
 var _vector$6 = new Vector3();
-var InterleavedBufferAttribute = class {
+var InterleavedBufferAttribute = class _InterleavedBufferAttribute {
   constructor(interleavedBuffer, itemSize, offset, normalized = false) {
     this.isInterleavedBufferAttribute = true;
     this.name = "";
@@ -18116,7 +18116,7 @@ var InterleavedBufferAttribute = class {
       if (data.interleavedBuffers[this.data.uuid] === void 0) {
         data.interleavedBuffers[this.data.uuid] = this.data.clone(data);
       }
-      return new InterleavedBufferAttribute(data.interleavedBuffers[this.data.uuid], this.itemSize, this.offset, this.normalized);
+      return new _InterleavedBufferAttribute(data.interleavedBuffers[this.data.uuid], this.itemSize, this.offset, this.normalized);
     }
   }
   toJSON(data) {
@@ -18501,7 +18501,7 @@ var DataTexture = class extends Texture {
 };
 var _offsetMatrix = new Matrix4();
 var _identityMatrix = new Matrix4();
-var Skeleton = class {
+var Skeleton = class _Skeleton {
   constructor(bones = [], boneInverses = []) {
     this.uuid = generateUUID();
     this.bones = bones.slice(0);
@@ -18573,7 +18573,7 @@ var Skeleton = class {
     }
   }
   clone() {
-    return new Skeleton(this.bones, this.boneInverses);
+    return new _Skeleton(this.bones, this.boneInverses);
   }
   computeBoneTexture() {
     let size = Math.sqrt(this.bones.length * 4);
@@ -20109,7 +20109,7 @@ var Path = class extends CurvePath {
     return this;
   }
 };
-var LatheGeometry = class extends BufferGeometry {
+var LatheGeometry = class _LatheGeometry extends BufferGeometry {
   constructor(points = [new Vector2(0, -0.5), new Vector2(0.5, 0), new Vector2(0, 0.5)], segments = 12, phiStart = 0, phiLength = Math.PI * 2) {
     super();
     this.type = "LatheGeometry";
@@ -20199,10 +20199,10 @@ var LatheGeometry = class extends BufferGeometry {
     this.setAttribute("normal", new Float32BufferAttribute(normals, 3));
   }
   static fromJSON(data) {
-    return new LatheGeometry(data.points, data.segments, data.phiStart, data.phiLength);
+    return new _LatheGeometry(data.points, data.segments, data.phiStart, data.phiLength);
   }
 };
-var CapsuleGeometry = class extends LatheGeometry {
+var CapsuleGeometry = class _CapsuleGeometry extends LatheGeometry {
   constructor(radius = 1, length = 1, capSegments = 4, radialSegments = 8) {
     const path = new Path();
     path.absarc(0, -length / 2, radius, Math.PI * 1.5, 0);
@@ -20217,10 +20217,10 @@ var CapsuleGeometry = class extends LatheGeometry {
     };
   }
   static fromJSON(data) {
-    return new CapsuleGeometry(data.radius, data.length, data.capSegments, data.radialSegments);
+    return new _CapsuleGeometry(data.radius, data.length, data.capSegments, data.radialSegments);
   }
 };
-var CircleGeometry = class extends BufferGeometry {
+var CircleGeometry = class _CircleGeometry extends BufferGeometry {
   constructor(radius = 1, segments = 32, thetaStart = 0, thetaLength = Math.PI * 2) {
     super();
     this.type = "CircleGeometry";
@@ -20259,10 +20259,10 @@ var CircleGeometry = class extends BufferGeometry {
     this.setAttribute("uv", new Float32BufferAttribute(uvs, 2));
   }
   static fromJSON(data) {
-    return new CircleGeometry(data.radius, data.segments, data.thetaStart, data.thetaLength);
+    return new _CircleGeometry(data.radius, data.segments, data.thetaStart, data.thetaLength);
   }
 };
-var CylinderGeometry = class extends BufferGeometry {
+var CylinderGeometry = class _CylinderGeometry extends BufferGeometry {
   constructor(radiusTop = 1, radiusBottom = 1, height = 1, radialSegments = 32, heightSegments = 1, openEnded = false, thetaStart = 0, thetaLength = Math.PI * 2) {
     super();
     this.type = "CylinderGeometry";
@@ -20381,10 +20381,10 @@ var CylinderGeometry = class extends BufferGeometry {
     }
   }
   static fromJSON(data) {
-    return new CylinderGeometry(data.radiusTop, data.radiusBottom, data.height, data.radialSegments, data.heightSegments, data.openEnded, data.thetaStart, data.thetaLength);
+    return new _CylinderGeometry(data.radiusTop, data.radiusBottom, data.height, data.radialSegments, data.heightSegments, data.openEnded, data.thetaStart, data.thetaLength);
   }
 };
-var ConeGeometry = class extends CylinderGeometry {
+var ConeGeometry = class _ConeGeometry extends CylinderGeometry {
   constructor(radius = 1, height = 1, radialSegments = 32, heightSegments = 1, openEnded = false, thetaStart = 0, thetaLength = Math.PI * 2) {
     super(0, radius, height, radialSegments, heightSegments, openEnded, thetaStart, thetaLength);
     this.type = "ConeGeometry";
@@ -20399,10 +20399,10 @@ var ConeGeometry = class extends CylinderGeometry {
     };
   }
   static fromJSON(data) {
-    return new ConeGeometry(data.radius, data.height, data.radialSegments, data.heightSegments, data.openEnded, data.thetaStart, data.thetaLength);
+    return new _ConeGeometry(data.radius, data.height, data.radialSegments, data.heightSegments, data.openEnded, data.thetaStart, data.thetaLength);
   }
 };
-var PolyhedronGeometry = class extends BufferGeometry {
+var PolyhedronGeometry = class _PolyhedronGeometry extends BufferGeometry {
   constructor(vertices = [], indices = [], radius = 1, detail = 0) {
     super();
     this.type = "PolyhedronGeometry";
@@ -20556,10 +20556,10 @@ var PolyhedronGeometry = class extends BufferGeometry {
     }
   }
   static fromJSON(data) {
-    return new PolyhedronGeometry(data.vertices, data.indices, data.radius, data.details);
+    return new _PolyhedronGeometry(data.vertices, data.indices, data.radius, data.details);
   }
 };
-var DodecahedronGeometry = class extends PolyhedronGeometry {
+var DodecahedronGeometry = class _DodecahedronGeometry extends PolyhedronGeometry {
   constructor(radius = 1, detail = 0) {
     const t = (1 + Math.sqrt(5)) / 2;
     const r = 1 / t;
@@ -20747,7 +20747,7 @@ var DodecahedronGeometry = class extends PolyhedronGeometry {
     };
   }
   static fromJSON(data) {
-    return new DodecahedronGeometry(data.radius, data.detail);
+    return new _DodecahedronGeometry(data.radius, data.detail);
   }
 };
 var _v0 = new Vector3();
@@ -21311,7 +21311,7 @@ function signedArea(data, start, end, dim) {
   }
   return sum;
 }
-var ShapeUtils = class {
+var ShapeUtils = class _ShapeUtils {
   // calculate area of the contour polygon
   static area(contour) {
     const n = contour.length;
@@ -21322,7 +21322,7 @@ var ShapeUtils = class {
     return a * 0.5;
   }
   static isClockWise(pts) {
-    return ShapeUtils.area(pts) < 0;
+    return _ShapeUtils.area(pts) < 0;
   }
   static triangulateShape(contour, holes) {
     const vertices = [];
@@ -21356,7 +21356,7 @@ function addContour(vertices, contour) {
     vertices.push(contour[i].y);
   }
 }
-var ExtrudeGeometry = class extends BufferGeometry {
+var ExtrudeGeometry = class _ExtrudeGeometry extends BufferGeometry {
   constructor(shapes = new Shape([new Vector2(0.5, 0.5), new Vector2(-0.5, 0.5), new Vector2(-0.5, -0.5), new Vector2(0.5, -0.5)]), options = {}) {
     super();
     this.type = "ExtrudeGeometry";
@@ -21680,7 +21680,7 @@ var ExtrudeGeometry = class extends BufferGeometry {
     if (extrudePath !== void 0) {
       data.options.extrudePath = new Curves[extrudePath.type]().fromJSON(extrudePath);
     }
-    return new ExtrudeGeometry(geometryShapes, data.options);
+    return new _ExtrudeGeometry(geometryShapes, data.options);
   }
 };
 var WorldUVGenerator = {
@@ -21742,7 +21742,7 @@ function toJSON$1(shapes, options, data) {
     data.options.extrudePath = options.extrudePath.toJSON();
   return data;
 }
-var IcosahedronGeometry = class extends PolyhedronGeometry {
+var IcosahedronGeometry = class _IcosahedronGeometry extends PolyhedronGeometry {
   constructor(radius = 1, detail = 0) {
     const t = (1 + Math.sqrt(5)) / 2;
     const vertices = [
@@ -21853,10 +21853,10 @@ var IcosahedronGeometry = class extends PolyhedronGeometry {
     };
   }
   static fromJSON(data) {
-    return new IcosahedronGeometry(data.radius, data.detail);
+    return new _IcosahedronGeometry(data.radius, data.detail);
   }
 };
-var OctahedronGeometry = class extends PolyhedronGeometry {
+var OctahedronGeometry = class _OctahedronGeometry extends PolyhedronGeometry {
   constructor(radius = 1, detail = 0) {
     const vertices = [
       1,
@@ -21912,10 +21912,10 @@ var OctahedronGeometry = class extends PolyhedronGeometry {
     };
   }
   static fromJSON(data) {
-    return new OctahedronGeometry(data.radius, data.detail);
+    return new _OctahedronGeometry(data.radius, data.detail);
   }
 };
-var RingGeometry = class extends BufferGeometry {
+var RingGeometry = class _RingGeometry extends BufferGeometry {
   constructor(innerRadius = 0.5, outerRadius = 1, thetaSegments = 32, phiSegments = 1, thetaStart = 0, thetaLength = Math.PI * 2) {
     super();
     this.type = "RingGeometry";
@@ -21968,10 +21968,10 @@ var RingGeometry = class extends BufferGeometry {
     this.setAttribute("uv", new Float32BufferAttribute(uvs, 2));
   }
   static fromJSON(data) {
-    return new RingGeometry(data.innerRadius, data.outerRadius, data.thetaSegments, data.phiSegments, data.thetaStart, data.thetaLength);
+    return new _RingGeometry(data.innerRadius, data.outerRadius, data.thetaSegments, data.phiSegments, data.thetaStart, data.thetaLength);
   }
 };
-var ShapeGeometry = class extends BufferGeometry {
+var ShapeGeometry = class _ShapeGeometry extends BufferGeometry {
   constructor(shapes = new Shape([new Vector2(0, 0.5), new Vector2(-0.5, -0.5), new Vector2(0.5, -0.5)]), curveSegments = 12) {
     super();
     this.type = "ShapeGeometry";
@@ -22045,7 +22045,7 @@ var ShapeGeometry = class extends BufferGeometry {
       const shape = shapes[data.shapes[j]];
       geometryShapes.push(shape);
     }
-    return new ShapeGeometry(geometryShapes, data.curveSegments);
+    return new _ShapeGeometry(geometryShapes, data.curveSegments);
   }
 };
 function toJSON(shapes, data) {
@@ -22060,7 +22060,7 @@ function toJSON(shapes, data) {
   }
   return data;
 }
-var SphereGeometry = class extends BufferGeometry {
+var SphereGeometry = class _SphereGeometry extends BufferGeometry {
   constructor(radius = 1, widthSegments = 32, heightSegments = 16, phiStart = 0, phiLength = Math.PI * 2, thetaStart = 0, thetaLength = Math.PI) {
     super();
     this.type = "SphereGeometry";
@@ -22124,10 +22124,10 @@ var SphereGeometry = class extends BufferGeometry {
     this.setAttribute("uv", new Float32BufferAttribute(uvs, 2));
   }
   static fromJSON(data) {
-    return new SphereGeometry(data.radius, data.widthSegments, data.heightSegments, data.phiStart, data.phiLength, data.thetaStart, data.thetaLength);
+    return new _SphereGeometry(data.radius, data.widthSegments, data.heightSegments, data.phiStart, data.phiLength, data.thetaStart, data.thetaLength);
   }
 };
-var TetrahedronGeometry = class extends PolyhedronGeometry {
+var TetrahedronGeometry = class _TetrahedronGeometry extends PolyhedronGeometry {
   constructor(radius = 1, detail = 0) {
     const vertices = [
       1,
@@ -22165,10 +22165,10 @@ var TetrahedronGeometry = class extends PolyhedronGeometry {
     };
   }
   static fromJSON(data) {
-    return new TetrahedronGeometry(data.radius, data.detail);
+    return new _TetrahedronGeometry(data.radius, data.detail);
   }
 };
-var TorusGeometry = class extends BufferGeometry {
+var TorusGeometry = class _TorusGeometry extends BufferGeometry {
   constructor(radius = 1, tube = 0.4, radialSegments = 12, tubularSegments = 48, arc = Math.PI * 2) {
     super();
     this.type = "TorusGeometry";
@@ -22220,10 +22220,10 @@ var TorusGeometry = class extends BufferGeometry {
     this.setAttribute("uv", new Float32BufferAttribute(uvs, 2));
   }
   static fromJSON(data) {
-    return new TorusGeometry(data.radius, data.tube, data.radialSegments, data.tubularSegments, data.arc);
+    return new _TorusGeometry(data.radius, data.tube, data.radialSegments, data.tubularSegments, data.arc);
   }
 };
-var TorusKnotGeometry = class extends BufferGeometry {
+var TorusKnotGeometry = class _TorusKnotGeometry extends BufferGeometry {
   constructor(radius = 1, tube = 0.4, tubularSegments = 64, radialSegments = 8, p = 2, q = 3) {
     super();
     this.type = "TorusKnotGeometry";
@@ -22297,10 +22297,10 @@ var TorusKnotGeometry = class extends BufferGeometry {
     }
   }
   static fromJSON(data) {
-    return new TorusKnotGeometry(data.radius, data.tube, data.tubularSegments, data.radialSegments, data.p, data.q);
+    return new _TorusKnotGeometry(data.radius, data.tube, data.tubularSegments, data.radialSegments, data.p, data.q);
   }
 };
-var TubeGeometry = class extends BufferGeometry {
+var TubeGeometry = class _TubeGeometry extends BufferGeometry {
   constructor(path = new QuadraticBezierCurve3(new Vector3(-1, -1, 0), new Vector3(-1, 1, 0), new Vector3(1, 1, 0)), tubularSegments = 64, radius = 1, radialSegments = 8, closed = false) {
     super();
     this.type = "TubeGeometry";
@@ -22383,7 +22383,7 @@ var TubeGeometry = class extends BufferGeometry {
     return data;
   }
   static fromJSON(data) {
-    return new TubeGeometry(
+    return new _TubeGeometry(
       new Curves[data.path.type]().fromJSON(data.path),
       data.tubularSegments,
       data.radius,
@@ -24956,7 +24956,7 @@ var LightProbe = class extends Light {
     return data;
   }
 };
-var MaterialLoader = class extends Loader {
+var MaterialLoader = class _MaterialLoader extends Loader {
   constructor(manager) {
     super(manager);
     this.textures = {};
@@ -24988,7 +24988,7 @@ var MaterialLoader = class extends Loader {
       }
       return textures[name];
     }
-    const material = MaterialLoader.createMaterialFromType(json.type);
+    const material = _MaterialLoader.createMaterialFromType(json.type);
     if (json.uuid !== void 0)
       material.uuid = json.uuid;
     if (json.name !== void 0)
@@ -26861,20 +26861,20 @@ var Composite = class {
     }
   }
 };
-var PropertyBinding = class {
+var PropertyBinding = class _PropertyBinding {
   constructor(rootNode, path, parsedPath) {
     this.path = path;
-    this.parsedPath = parsedPath || PropertyBinding.parseTrackName(path);
-    this.node = PropertyBinding.findNode(rootNode, this.parsedPath.nodeName) || rootNode;
+    this.parsedPath = parsedPath || _PropertyBinding.parseTrackName(path);
+    this.node = _PropertyBinding.findNode(rootNode, this.parsedPath.nodeName) || rootNode;
     this.rootNode = rootNode;
     this.getValue = this._getValue_unbound;
     this.setValue = this._setValue_unbound;
   }
   static create(root, path, parsedPath) {
     if (!(root && root.isAnimationObjectGroup)) {
-      return new PropertyBinding(root, path, parsedPath);
+      return new _PropertyBinding(root, path, parsedPath);
     } else {
-      return new PropertyBinding.Composite(root, path, parsedPath);
+      return new _PropertyBinding.Composite(root, path, parsedPath);
     }
   }
   /**
@@ -27038,7 +27038,7 @@ var PropertyBinding = class {
     const propertyName = parsedPath.propertyName;
     let propertyIndex = parsedPath.propertyIndex;
     if (!targetObject) {
-      targetObject = PropertyBinding.findNode(this.rootNode, parsedPath.nodeName) || this.rootNode;
+      targetObject = _PropertyBinding.findNode(this.rootNode, parsedPath.nodeName) || this.rootNode;
       this.node = targetObject;
     }
     this.getValue = this._getValue_unavailable;
@@ -28080,12 +28080,12 @@ var AnimationMixer = class extends EventDispatcher {
     }
   }
 };
-var Uniform = class {
+var Uniform = class _Uniform {
   constructor(value) {
     this.value = value;
   }
   clone() {
-    return new Uniform(this.value.clone === void 0 ? this.value : this.value.clone());
+    return new _Uniform(this.value.clone === void 0 ? this.value : this.value.clone());
   }
 };
 var id = 0;
@@ -30062,4 +30062,4 @@ three/build/three.module.js:
    * SPDX-License-Identifier: MIT
    *)
 */
-//# sourceMappingURL=chunk-XSUIV4LX.js.map
+//# sourceMappingURL=chunk-2KOAPTJO.js.map

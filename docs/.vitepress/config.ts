@@ -18,9 +18,6 @@ export default defineConfig({
   title: vitestName,
   description: vitestDescription,
   ignoreDeadLinks: true,
-  search: {
-    provider: 'local'
-  },
   head: [
     ['meta', { name: 'theme-color', content: '#ffbbaa' }],
     ['link', { rel: 'icon', href: '/logo-night.png', type: 'image/svg+xml' }],

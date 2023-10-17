@@ -36,5 +36,5 @@ yarn-error.log*
 dist
 
 varies-doc/.vitepress/cache
-doc/.vitepress/dist
-doc/.vitepress/cache
+docs/.vitepress/dist
+docs/.vitepress/cache

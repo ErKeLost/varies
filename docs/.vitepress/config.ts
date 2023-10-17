@@ -66,20 +66,22 @@ export default defineConfig({
   },
   themeConfig: {
     logo: '/logo-light.png',
-
+    search: {
+      provider: 'local'
+    },
     editLink: {
       pattern: 'https://github.com/variesd/varies/tree/main/docs/:path',
       text: 'Suggest changes to this page'
     },
 
-    algolia: {
-      appId: 'UXAGX7LTJC',
-      apiKey: '46dbb98bb8d8f7c7f5d6f04544e8a40a',
-      indexName: 'variesd-spring'
-      // searchParameters: {
-      //   facetFilters: ['tags:en'],
-      // },
-    },
+    // algolia: {
+    //   appId: 'UXAGX7LTJC',
+    //   apiKey: '46dbb98bb8d8f7c7f5d6f04544e8a40a',
+    //   indexName: 'variesd-spring'
+    //   // searchParameters: {
+    //   //   facetFilters: ['tags:en'],
+    //   // },
+    // },
 
     localeLinks: {
       text: 'English',

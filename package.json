@@ -2,6 +2,7 @@
   "name": "variesd",
   "version": "0.0.21",
   "author": "erkelost",
+  "type": "module",
   "scripts": {
     "dev": "turbo run dev",
     "bootstrap": "pnpm install && pnpm build",
@@ -18,10 +19,7 @@
     "preinstall": "npx only-allow pnpm",
     "prepublishOnly": "npm run build",
     "release": "bumpp packages/*/package.json && pnpm publish -r",
-    "test": "vitest",
-    "docs:dev": "vitepress dev varies-doc",
-    "docs:build": "vitepress build varies-doc",
-    "docs:preview": "vitepress preview varies-doc"
+    "test": "vitest"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
@@ -61,8 +59,12 @@
   "pnpm": {
     "overrides": {
       "vue-demi": "0.13.11"
+    },
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
     }
   },
-  "packageManager": "pnpm@7.33.6",
-  "files": []
+  "packageManager": "pnpm@8.7.4"
 }

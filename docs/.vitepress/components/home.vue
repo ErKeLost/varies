@@ -1,11 +1,9 @@
 <script setup lang="ts">
-// import NewsLetter from './NewsLetter.vue'
-// import SponsorsGroup from './SponsorsGroup.vue';
+import Button from './button.vue'
 </script>
 
 <template>
   <section id="hero">
-    <!-- <TheExperience /> -->
     <h1 class="tagline">
       Use
       <span class="accent"> Animation Library</span>
@@ -45,39 +43,8 @@
     <span>Use in a variety of many ways</span>
   </section>
 
-  <section id="highlights" class="vt-box-container">
-    <!-- <div class="vt-box">
-      <h2>自动化 与 脚手架</h2>
-      <p>
-        构建自动化脚本 集成单元测试，提升开发效率， 可扩展 可定制 开发工具，
-        覆盖开发全链路
-      </p>
-    </div>
-    <div class="vt-box">
-      <h2>组件库 与 框架工具库</h2>
-      <p>提升开发效率， 功能严谨， 全ts开发 单元测试全覆盖， 可扩展 可定制</p>
-    </div>
-    <div class="vt-box">
-      <h2>前端规范 与 生态</h2>
-      <p>
-        git 开发 提交 规范， 边缘生态， 插件开发， 定制功能， 工程化 代码规范
-      </p>
-    </div> -->
-  </section>
-
-  <!-- <section id="sponsors">
-    <h2>Platinum Sponsors</h2>
-    <SponsorsGroup tier="platinum" placement="landing" />
-    <h2>Gold Sponsors</h2>
-    <SponsorsGroup tier="gold" placement="landing" />
-  </section> -->
-
-  <!-- <NewsLetter /> -->
+  <section id="highlights" class="vt-box-container"></section>
 </template>
-<script lang="ts">
-import TheExperience from './portal-journey/TheExperience.vue'
-import Button from './button.vue'
-</script>
 <style scoped>
 .get-started {
   display: flex;

@@ -30,7 +30,7 @@
     "@types/prettier": "^2.7.2",
     "bumpp": "^9.0.0",
     "commitlint": "^17.4.4",
-    "consola": "^2.15.3",
+    "consola": "^3.0.0",
     "cross-env": "^7.0.3",
     "esbuild": "^0.19.0",
     "eslint": "^8.34.0",

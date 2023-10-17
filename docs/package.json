@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@iconify-json/carbon": "latest",
-    "@tresjs/cientos": "^1.8.0",
+    "@tresjs/cientos": "^3.0.0",
     "@tresjs/core": "^1.8.1",
     "@unocss/reset": "^0.48.5",
     "@vitejs/plugin-vue": "latest",

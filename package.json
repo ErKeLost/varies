@@ -38,7 +38,7 @@
     "esno": "^0.17.0",
     "export-size": "^0.6.0",
     "fast-glob": "^3.2.12",
-    "firebase": "^9.17.1",
+    "firebase": "^10.0.0",
     "fs-extra": "^11.1.0",
     "husky": "^8.0.3",
     "js-yaml": "^4.1.0",

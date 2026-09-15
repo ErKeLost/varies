@@ -58,7 +58,7 @@
   },
   "pnpm": {
     "overrides": {
-      "vue-demi": "0.13.11"
+      "vue-demi": "0.14.10"
     },
     "peerDependencyRules": {
       "ignoreMissing": [
